@@ -1,0 +1,17 @@
+    plugins {
+        id 'java'
+    }
+
+    repositories {
+        mavenCentral()
+    }
+
+    dependencies {
+        implementation 'io.appium:java-client:8.3.0'
+        testImplementation 'org.testng:testng:7.7.0'
+        implementation("org.seleniumhq.selenium:selenium-java:4.7.0")
+    }
+
+    test {
+        useTestNG()
+    }
